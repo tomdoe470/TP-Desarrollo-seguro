@@ -1,0 +1,12 @@
+Año: mayo del 2025
+Profesor: Lic. Juan Pablo Villalba
+Alumno: de Otaduy Tomás
+
+
+Esta es la presentacion del primer trabajo practico para la materia "Desarrollo seguro"
+
+En este caso se cubre la creacion de una API con autenticacion simple en la cual
+hay dos carpetas, una publica y sin ningun acceso requerido y otra privada que
+si requiere autenticacion.
+
+
