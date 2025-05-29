@@ -48,19 +48,25 @@ Se desarrollaron diferentes rutas con acceso público y privado, incluyendo meca
 Acceder a la documentación interactiva:
 Swagger UI: http://127.0.0.1:8000/docs
 
-##🔍 Endpoints disponibles
-Ruta	Método	Requiere API Key	Requiere IP válida	Requiere JWT	Descripción
-/public	GET	❌	❌	❌	Ruta de acceso libre
-/private	GET	✅	❌	❌	Requiere API Key
-/secure-data	GET	✅	✅	❌	Requiere API Key + IP autorizada
-/token	POST	❌	❌	❌	Devuelve un JWT si las credenciales son correctas
-/protected-jwt	GET	❌	❌	✅	Protegida con JWT Bearer Token
+## 📡 Endpoints disponibles
 
-##Notas
-Usuario de prueba: admin
+| Ruta                | Método | Requiere API Key | Requiere IP válida | Requiere JWT | Descripción                         |
+|---------------------|--------|------------------|--------------------|--------------|-------------------------------------|
+| `/public`           | GET    | ❌               | ❌                 | ❌           | Ruta de acceso libre                |
+| `/private`          | GET    | ✅               | ❌                 | ❌           | Protegida con API Key               |
+| `/secure-data`      | GET    | ✅               | ✅                 | ❌           | Protegida con IP autorizada y API Key |
+| `/token`            | POST   | ❌               | ❌                 | ❌           | Devuelve un JWT si las credenciales son correctas |
+| `/protected-jwt`    | GET    | ❌               | ❌                 | ✅           | Protegida con autenticación JWT     |
 
-Contraseña: 1234
+---
 
-API Key: definida en settings.py bajo API_KEY
+## 📌 Notas
+
+- **Usuario de prueba:** `admin`  
+- **Contraseña:** `1234`  
+- **API Key esperada:** definida en `settings.py` como `API_KEY`  
+- **IPs permitidas:** definidas en `settings.py` como `ALLOWED_IPS`  
+- **JWT:** firmado con HS256 y expiración configurada  
+- **Cabecera JWT:** `Authorization: Bearer <token>
 
    
