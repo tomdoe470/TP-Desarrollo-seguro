@@ -1,0 +1,4 @@
+fastapi==0.115.12
+PyJWT==2.10.1
+PyJWT==2.10.1
+starlette==0.46.2
