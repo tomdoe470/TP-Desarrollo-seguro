@@ -4,5 +4,6 @@ ALLOWED_IPS = ["127.0.0.1", "192.168.100.76"]  # IPs desde las que se permite el
 
 JWT_SECRET = "claveultrasecreta"
 JWT_ALGORITHM = "HS256"
+ENFORCE_HTTPS = False     #Se cambiaria en Prod
 
 
