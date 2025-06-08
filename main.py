@@ -155,7 +155,7 @@ def login(form_data: OAuth2PasswordRequestForm = Depends()):
     # Validación dura de credenciales con modelo → evita inputs raros
     creds = UserLogin(username=form_data.username, password=form_data.password)
     # Usuario ficticio
-    if creds.username != "admin" or creds.password.get_secret_value() != "1234":
+    if creds.username != "admin" or creds.password.get_secret_value() != "SuperSegura1234":
         raise HTTPException(status_code=400, detail="Credenciales inválidas")
 
     token = create_jwt_token({"sub": creds.username})
