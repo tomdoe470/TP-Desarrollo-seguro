@@ -1,4 +1,4 @@
-# Trabajo Práctico Nº2 – Desarrollo Seguro de APIs
+# Trabajo Práctico Nº3 – Desarrollo Seguro de APIs
 
 **Materia:** Desarrollo Seguro  
 **Fecha:** Mayo de 2025  
@@ -9,7 +9,7 @@
 
 ## 🧩 Descripción general
 
-Este proyecto consiste en la creación de una API RESTful utilizando el framework **FastAPI**, con el objetivo de implementar y analizar diversos métodos de **autenticación y control de acceso**, conforme a buenas prácticas de seguridad.
+Este proyecto consiste en la creación de una API RESTful utilizando el framework **FastAPI**, con el objetivo de implementar y analizar todos los métodos de **autenticación y control de acceso**, conforme a buenas prácticas de seguridad.
 
 Se desarrollaron diferentes rutas con acceso público y privado, incluyendo mecanismos de autenticación por **API Key**, validación por **dirección IP** y protección mediante **tokens JWT**. Además, la documentación se genera automáticamente conforme al estándar **OpenAPI**.
 
